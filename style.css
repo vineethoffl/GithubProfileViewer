@@ -1,0 +1,140 @@
+       body {
+            font-family: Calibri, sans-serif; /* Change font to Calibri */
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            margin-bottom: 20px;
+            border: none; /* Remove border */
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px; /* Set border radius */
+            border: 2px solid transparent; /* Add transparent border */
+            transition: border-color 0.3s; /* Add transition effect */
+            outline: none; /* Remove default outline */
+        }
+
+        input[type="text"]:focus {
+            border-color: #FFD700; /* Change border color on focus */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .card {
+            background-color: #666; /* Dark gray background */
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 700px;
+            margin: 0 auto;
+            display: flex; /* Add flex display */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center elements */
+            text-align: center; /* Center text */
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Rounded image */
+            margin-bottom: 30px; /* Add margin to the bottom for spacing */
+            border: 10px solid white; /* Add white border */
+            margin-top: 40px; /* Add more margin to top */
+        }
+
+        .user-info {
+            color: #fff; /* Text color white */
+            text-align: left; /* Align text to the left */
+        }
+
+        .user-info h2 {
+            margin-top: 0;
+        }
+
+        .user-info ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0; /* Add margin */
+            display: flex; /* Display items in a row */
+            justify-content: flex-start; /* Align items to the start */
+            flex-wrap: wrap; /* Wrap items if they exceed the width */
+        }
+
+        .user-info ul li {
+            margin-right: 20px; /* Add space between items */
+            margin-bottom: 10px; /* Add space below items */
+            white-space: nowrap; /* Prevent items from wrapping */
+            min-width: 150px; /* Set minimum width for items */
+        }
+
+        .user-info ul:last-child {
+            width: 100%; /* Set width to 100% for Twitter and Location */
+            display: flex; /* Display items in a row */
+            justify-content: space-between; /* Distribute items evenly */
+        }
+
+        .user-info ul:last-child li {
+            flex: 1; /* Distribute available space evenly */
+            min-width: auto; /* Remove minimum width */
+        }
+
+        @media only screen and (max-width: 767px) {
+            .card {
+                width: 90%; /* Reduce width for small screens */
+            }
+
+            .avatar {
+                margin-top: 20px; /* Reduce top margin */
+                margin-bottom: 20px; /* Reduce bottom margin */
+            }
+
+            .user-info {
+                text-align: center; /* Center text for small screens */
+            }
+
+            .user-info ul {
+                justify-content: center; /* Center items for small screens */
+            }
+
+            .user-info ul:last-child {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center items */
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .card {
+                flex-direction: row; /* Display elements horizontally */
+                align-items: flex-start; /* Align items to the top */
+                text-align: left; /* Align text to the left */
+            }
+
+            .avatar {
+                margin-right: 20px; /* Add margin to the right for spacing */
+                margin-bottom: 0; /* Remove bottom margin */
+                margin-top: 0; /* Remove top margin */
+            }
+        }
+   
