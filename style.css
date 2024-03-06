@@ -1,6 +1,6 @@
        body {
-            font-family: Calibri, sans-serif; /* Change font to Calibri */
-            font-size: large;
+            font-family: "Montserrat","Calibri", sans-serif;
+            font-size: medium;
             margin: 0;
             padding: 0;
             display: flex;
